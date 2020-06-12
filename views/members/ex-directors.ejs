@@ -1,0 +1,21 @@
+<%- include("../partials/header.ejs") %>
+<main>
+    <% if(mentors.length > 0) { %>
+    <div>
+        <% for(let mentor of mentors) { %>
+        <div>
+            <%= mentor.name %>
+        </div>
+        <div>
+            <a href="<%= mentor.img %>"></a>
+        </div>
+        <% } %>
+    </div>
+    <% }else{ %>
+    <div>
+        No events
+    </div>
+    <% } %>
+</main>
+
+<%- include("../partials/footer.ejs") %>

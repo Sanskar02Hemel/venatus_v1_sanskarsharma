@@ -1,0 +1,24 @@
+<%- include("../partials/header.ejs") %>
+<main>
+    <% if(firstyrs.length > 0) { %>
+    <div>
+        <% for(let firstyr of firstyrs) { %>
+        <div>
+            <%= firstyr.name %>
+        </div>
+        <div>
+            <a style="border: 2px solid red" href="<%= firstyr.img %>"></a>
+        </div>
+        <div>
+            <%= firstyr.info %>
+        </div>
+        <% } %>
+    </div>
+    <% }else{ %>
+    <div>
+        No events
+    </div>
+    <% } %>
+</main>
+
+<%- include("../partials/footer.ejs") %>

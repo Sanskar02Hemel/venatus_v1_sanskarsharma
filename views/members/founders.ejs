@@ -1,0 +1,27 @@
+<%- include("../partials/header.ejs") %>
+<main>
+    <% if(founders.length > 0) { %>
+    <div>
+        <% for(let founder of founders) { %>
+        <div>
+            <%= founder.name %>
+        </div>
+        <div>
+            <a href="<%= founder.img %>"></a>
+        </div>
+        <div>
+            <%= founder.info %>
+        </div>
+        <div>
+            <a href="<%= founder.fb %>"></a>
+        </div>
+        <% } %>
+    </div>
+    <% }else{ %>
+    <div>
+        No events
+    </div>
+    <% } %>
+</main>
+
+<%- include("../partials/footer.ejs") %>

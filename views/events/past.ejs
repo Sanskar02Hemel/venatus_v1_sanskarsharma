@@ -1,0 +1,24 @@
+<%- include("../partials/header.ejs") %>
+    <main>
+        <% if(events.length > 0) { %>
+        <div>
+            <% for(let event of events) { %>
+            <div>
+                <%= event.name %>
+            </div>
+            <div>
+                <a href="<%= event.img %>"></a>
+            </div>
+            <div>
+                <%= event.info %>
+            </div>
+            <% } %>
+        </div>
+        <% }else{ %>
+        <div>
+            No events
+        </div>
+        <% } %>
+    </main>
+
+<%- include("../partials/footer.ejs") %>

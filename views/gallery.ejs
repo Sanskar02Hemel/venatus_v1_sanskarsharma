@@ -1,0 +1,14 @@
+<%- include("./partials/header.ejs") %>
+
+<div class="row text-center" style="display:flex; flex-wrap: wrap">
+    <%if (image.length > 0) { %>
+    <% for(let image of images) { %>
+    <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+            <img src="<%= image.img %>">
+        </div>
+    </div>
+    <% }; %>
+    <% }; %>
+</div>
+<%- include("./partials/footer.ejs") %>
