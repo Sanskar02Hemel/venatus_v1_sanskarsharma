@@ -1,21 +1,30 @@
 <%- include("../partials/header.ejs") %>
 <main>
     <% if(founders.length > 0) { %>
-    <div>
+        <div class="container">
+        <div class="row">
         <% for(let founder of founders) { %>
-        <div>
-            <%= founder.name %>
+        <div class="col-lg-4">
+        <div class="card" style="width: 18rem;">
+            <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Name: <%= founder.name %></h5>
+                <p class="card-text">
+                    <span>Year: <%= founder.year %></span><br>
+                    <span>Branch: <%= founder.branch %></span><br>
+                    <span>Placed in: <%= founder.placement %></span><br>
+                    <span>Gamer-Tag: <%= founder.tag %></span><br>
+                    <span>Ex-Post: <%= founder.post %></span>
+                </p>
+                <a href="<%= founder.fb %>" class="btn btn-primary">Facebook</a>
+            </div>
+        </div>
         </div>
         <div>
-            <a href="<%= founder.img %>"></a>
-        </div>
-        <div>
-            <%= founder.info %>
-        </div>
-        <div>
-            <a href="<%= founder.fb %>"></a>
-        </div>
         <% } %>
+        </div>
+           
+    </div>
     </div>
     <% }else{ %>
     <div>

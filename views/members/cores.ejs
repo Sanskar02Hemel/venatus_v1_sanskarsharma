@@ -1,18 +1,21 @@
 <%- include("../partials/header.ejs") %>
 <main>
     <% if(cores.length > 0) { %>
-    <div>
+        <div class="container">
+            <div class="row">
         <% for(let core of cores) { %>
-        <div>
-            <%= core.name %>
-        </div>
-        <div>
-            <%= core.post %>
-        </div>
-        <div>
-            <a href="<%= core.img %>"></a>
-        </div>
+            <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Name: <%= core.name %></h5>
+                        <p class="card-text">Post: <%= core.post %></p>
+                        <a href="#" class="btn btn-primary">Facebook</a>
+                    </div>
+                </div>
+            </div>
         <% } %>
+    </div>
     </div>
     <% }else{ %>
     <div>

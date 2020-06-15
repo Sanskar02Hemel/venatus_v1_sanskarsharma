@@ -1,20 +1,30 @@
 <%- include("../partials/header.ejs") %>
 <main>
     <% if(secondyrs.length > 0) { %>
-    <div>
-        <% for(let secondyr of secondyrs) { %>
-        <div>
-            <%= secondyr.name %>
-        </div>
-        <div>
-            <a style="border: 2px solid red" href="<%= secondyr.img %>"></a>
-        </div>
-        <div>
-            <%= secondyr.info %>
-        </div>
-        <% } %>
-    </div>
+        <div class="container">
+            <div class="row">
+                <% for(let secondyr of secondyrs) { %>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: <%= secondyr.name %></h5>
+                            <p class="card-text">
+                                <span>Year: <%= secondyr.year %></span><br>
+                                <span>Branch: <%= secondyr.branch %></span><br>
+                                <span>Email: <%= secondyr.email %></span><br>
+                                <span>Gamer-Tag: <%= secondyr.tag %></span><br>
+                                <span>Achievement: <%= secondyr.achievement %></span><br>
+                            </p>
+                            <a href="<%= secondyr.linkedIn %>" class="btn btn-primary">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
     <% }else{ %>
+            </div>
+            </div>
     <div>
         No events
     </div>

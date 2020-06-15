@@ -11,7 +11,23 @@ const firstyrSchema = new Schema ({
         type: String,
         required: true
     },
-    info: {
+    year: {
+        type: String,
+        required: true
+    },
+    branch: {
+        type: String,
+        required: true
+    },
+    tag: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
+    linkedin: {
         type: String,
         required: true
     }

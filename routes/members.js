@@ -9,6 +9,10 @@ const express = require("express"),
       thirdyrsController = require("../controllers/third"),
       fourthyrsController = require("../controllers/fourth");
 
+router.get("/show", function(req, res){
+    res.render("../views/members/show.ejs");
+});
+      
 router.get("/founders", founderController.getfounders);
 
 router.get("/cores", coreController.getcores);

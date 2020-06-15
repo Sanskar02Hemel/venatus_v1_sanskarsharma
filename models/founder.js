@@ -11,7 +11,23 @@ const founderSchema = new Schema({
         type: String,
         required: true,
     },
-    info: {
+    year: {
+        type: String,
+        required: true,
+    },
+    branch: {
+        type: String,
+        required: true,
+    },
+    placement: {
+        type: String,
+        required: true,
+    },
+    tag: {
+        type: String,
+        required: true,
+    },
+    post: {
         type: String,
         required: true,
     },

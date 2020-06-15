@@ -11,10 +11,30 @@ const fourthyrSchema = new Schema({
         type: String,
         required: true
     },
-    info: {
+    year: {
         type: String,
         required: true
-    }
+    },
+    branch: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
+    tag: {
+        type: String,
+        required: true
+    },
+    placement: {
+        type: String,
+        required: true
+    },
+    linkedIn: {
+        type: String,
+        required: true
+    },
 });
 
 module.exports = mongoose.model("Fourthyrs", fourthyrSchema);

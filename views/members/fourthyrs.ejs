@@ -1,20 +1,31 @@
 <%- include("../partials/header.ejs") %>
 <main>
     <% if(fourthyrs.length > 0) { %>
-    <div>
-        <% for(let fourthyr of fourthyrs) { %>
-        <div>
-            <%= fourthyr.name %>
+    <div class="container">
+        <div class="row">
+            <% for(let fourthyr of fourthyrs) { %>
+            <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <% var mysort = {fourthyr.name: 1}; %> 
+                        <h5 class="card-title">Name: <%= fourthyr.sort({name: 1})%></h5>
+                        <p class="card-text">
+                            <span>Year: <%= fourthyr.year %></span><br>
+                            <span>Branch: <%= fourthyr.branch %></span><br>
+                            <span>Email: <%= fourthyr.email %></span><br>
+                            <span>Gamer-Tag: <%= fourthyr.tag %></span><br>
+                            <span>Placed in: <%= fourthyr.placement %></span><br>
+                        </p>
+                        <a href="<%= fourthyr.linkedIn %>" class="btn btn-primary">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+            <% }else{ %>
         </div>
-        <div>
-            <a style="border: 2px solid red" href="<%= fourthyr.img %>"></a>
-        </div>
-        <div>
-            <%= fourthyr.info %>
-        </div>
-        <% } %>
     </div>
-    <% }else{ %>
     <div>
         No events
     </div>

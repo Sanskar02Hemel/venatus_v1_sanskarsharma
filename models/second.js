@@ -11,10 +11,31 @@ const secondyrSchema = new Schema ({
         type: String,
         required: true
     },
-    info: {
+    year: {
+        type: String,
+        required: true
+    },
+    branch: {
+        type: String,
+        required: true
+    },
+    tag: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
+    linkedin: {
+        type: String,
+        required: true
+    },
+    achievement: {
         type: String,
         required: true
     }
+
 });
 
 module.exports = mongoose.model("Secondyrs", secondyrSchema);
