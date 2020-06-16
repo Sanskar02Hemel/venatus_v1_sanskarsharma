@@ -1,13 +1,52 @@
-#about {
+#about_image {
     border: chartreuse 2px solid;
     width: 100%;
 }
+.jumbotron {
+    color: darkblue;
+}
 body {
     font-family: 'Roboto', sans-serif;
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right bottom, #000428, #004e92);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right bottom, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    font-size: 1.2rem;
+    color: white;
 }
 .navbar {
     padding: 15px;
 }
 .card {
-    box-shadow: 5px 10px;
+    box-shadow: 5px 5px black;
+    color: black;
+    width: 95%;
+    margin: 20px 20px 0 0;
+    border-left: 700px;
+    border-right : 700px;
+}
+html{
+    font-size: 62.5%;
+}
+#about {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.navbar{
+    font-size: 2rem;
+}
+.navbar-brand {
+    font-size: 2rem;
+}
+.jumbotron {
+    box-shadow: 5px 5px black;
+}
+.dropdown-menu{
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100px;
+}
+#vidaai{
+    word-wrap: break-word;
 }

@@ -4,13 +4,12 @@
     <div class="container">
         <div class="row">
             <% for(let fourthyr of fourthyrs) { %>
-            <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
+            <div class="col-md-4">
+                <div class="card">
                     <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" class="card-img-top"
                         alt="...">
                     <div class="card-body">
-                        <% var mysort = {fourthyr.name: 1}; %> 
-                        <h5 class="card-title">Name: <%= fourthyr.sort({name: 1})%></h5>
+                        <h5 class="card-title">Name: <%= fourthyr.name%></h5>
                         <p class="card-text">
                             <span>Year: <%= fourthyr.year %></span><br>
                             <span>Branch: <%= fourthyr.branch %></span><br>
