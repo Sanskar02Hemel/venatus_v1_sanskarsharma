@@ -1,11 +1,11 @@
 <%- include("./partials/header.ejs") %>
-
-<div class="row text-center" style="display:flex; flex-wrap: wrap">
-    <%if (image.length > 0) { %>
-    <% for(let image of images) { %>
+<h1 style="text-align: center; color: white; margin-top: 100px;" id="gall">Gallery</h1>
+<div class="row gallery" style="display:flex; flex-wrap: wrap">
+    <%if (gallerys.length > 0) { %>
+    <% for(let gallery of gallerys) { %>
     <div class="col-md-3 col-sm-6">
-        <div class="thumbnail">
-            <img src="<%= image.img %>">
+        <div class="card w-100 gallery">
+            <img src="<%= gallery.img %>" class="img-thumbnail" alt="PCI TEST">
         </div>
     </div>
     <% }; %>

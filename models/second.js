@@ -27,7 +27,7 @@ const secondyrSchema = new Schema ({
         type: String,
         required: true
     },
-    linkedin: {
+    linkedIn: {
         type: String,
         required: true
     },

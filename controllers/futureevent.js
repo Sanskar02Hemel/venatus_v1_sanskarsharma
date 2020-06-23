@@ -1,7 +1,8 @@
-const Futureevent = require("../models/futureEvent");
+const Futureevents = require("../models/futureEvent");
 
 exports.getEvents = (req, res, next) => {
-    Futureevent.find()
+    Futureevents.find()
+        .sort({ name: +1 })
         .then((events) => {
             res.render('events/future', {
                 events: events,

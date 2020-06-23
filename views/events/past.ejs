@@ -1,24 +1,30 @@
 <%- include("../partials/header.ejs") %>
-    <main>
-        <% if(events.length > 0) { %>
-        <div>
-            <% for(let event of events) { %>
-            <div>
-                <%= event.name %>
-            </div>
-            <div>
-                <a href="<%= event.img %>"></a>
-            </div>
-            <div>
-                <%= event.info %>
-            </div>
-            <% } %>
+<main>
+  <% if(events.length > 0) { %>
+  <div class="container past">
+    <div class="row">
+      <% for(let event of events) { %>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <div class="card border-0 shadow pasteve">
+          <img src="<%= event.img %>" class="card-img-top" alt="PCI TEST">
+          <div class="card-body">
+            <h5 class="card-title">Title: <%= event.name %></h5>
+            <p class="card-text">
+              <%= event.info %> 
+            </p>
+            <a href="" class="btn btn-primary">Read More</a>
+          </div>
         </div>
-        <% }else{ %>
-        <div>
-            No events
-        </div>
-        <% } %>
-    </main>
+      </div>
+
+      <% } %>
+    </div>
+  </div>
+  <% }else{ %>
+  <div>
+    No events
+  </div>
+  <% } %>
+</main>
 
 <%- include("../partials/footer.ejs") %>

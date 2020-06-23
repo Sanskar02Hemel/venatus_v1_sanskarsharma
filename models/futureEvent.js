@@ -17,4 +17,4 @@ const futureEventSchema = new Schema({
     },
 });
 
-module.exports = mongoose.model('Futureevent', futureEventSchema);
+module.exports = mongoose.model('Futureevents', futureEventSchema);

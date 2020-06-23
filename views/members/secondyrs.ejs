@@ -1,13 +1,13 @@
 <%- include("../partials/header.ejs") %>
 <main>
     <% if(secondyrs.length > 0) { %>
-        <div class="container">
+        <div class="container secondyrs">
             <div class="row">
                 <% for(let secondyr of secondyrs) { %>
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" class="card-img-top"
-                            alt="...">
+                    <div class="card secondyr">
+                        <img src="<%= secondyr.img %> " class="card-img-top"
+                            alt="PIC TEST">
                         <div class="card-body">
                             <h5 class="card-title">Name: <%= secondyr.name %></h5>
                             <p class="card-text">
@@ -17,7 +17,9 @@
                                 <span>Gamer-Tag: <%= secondyr.tag %></span><br>
                                 <span>Achievement: <%= secondyr.achievement %></span><br>
                             </p>
-                            <a href="<%= secondyr.linkedIn %>" class="btn btn-primary">LinkedIn</a>
+                            <% if (secondyr.linkedIn) { %>
+                                <a href="<%= secondyr.linkedIn %>" class="btn btn-primary">LinkedIn</a>
+                            <% } %>
                         </div>
                     </div>
                 </div>

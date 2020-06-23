@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const gallerySchema = new Schema({
-    imgUrl: {
+    img: {
         type: String,
         required: true,
     }
 });
 
-module.exports = mongoose.model('Gallery', gallerySchema);
+module.exports = mongoose.model('Gallerys', gallerySchema);

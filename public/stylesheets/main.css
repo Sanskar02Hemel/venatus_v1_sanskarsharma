@@ -1,21 +1,28 @@
 #about_image {
-    border: chartreuse 2px solid;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.35);
     width: 100%;
 }
 .jumbotron {
     color: darkblue;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    background: #000428;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right bottom, #000428, #004e92);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right bottom, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: "Roboto", sans-serif;
+    background: #000428; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right bottom, #000428, #004e92); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right bottom,
+        #000428,
+        #004e92
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-repeat: no-repeat;
     font-size: 1.2rem;
     color: white;
 }
 .navbar {
     padding: 15px;
+    margin-bottom: 100px;
+    font-size: 2rem;
+    background-color: #000428;
 }
 .card {
     box-shadow: 5px 5px black;
@@ -23,17 +30,29 @@ body {
     width: 95%;
     margin: 20px 20px 0 0;
     border-left: 700px;
-    border-right : 700px;
+    border-right: 700px;
+    border-top: 700px;
 }
-html{
+html {
     font-size: 62.5%;
 }
 #about {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
 }
-.navbar{
-    font-size: 2rem;
+#about h1 {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 6.0rem;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#about p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
 .navbar-brand {
     font-size: 2rem;
@@ -41,12 +60,185 @@ html{
 .jumbotron {
     box-shadow: 5px 5px black;
 }
-.dropdown-menu{
+.dropdown-menu {
     text-overflow: ellipsis !important;
     white-space: nowrap;
     overflow: hidden;
     width: 100px;
 }
-#vidaai{
-    word-wrap: break-word;
+#vidaai {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.nav-link {
+    margin-right: 5px;
+    color: white;
+}
+.nav-link:hover {
+    color: #004e92;
+}
+.navbar-brand {
+    color: white;
+}
+.navbar-brand:hover {
+    color: #004e92;
+}
+.card img{
+    width: 100%;
+    border-top: none;
+    height: 425px;
+}
+.card {
+    height: 550px;
+}
+.firstyr img{
+    width: 100%;
+    border-top: none;
+    height: 425px; 
+}
+.firstyr {
+    height: 600px;
+}
+.secondyr img{
+    width: 100%;
+    border-top: none;
+    height: 425px; 
+}
+.secondyr {
+    height: 625px;
+}
+.thirdyr img{
+    width: 100%;
+    border-top: none;
+    height: 425px; 
+}
+.thirdyr {
+    height: 600px;
+}
+.fourthyr img{
+    width: 100%;
+    border-top: none;
+    height: 425px; 
+}
+.fourthyr {
+    height: 600px;
+}
+.gallery img{
+    height: 100%;
+}
+.display-2 {
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+}  
+#gameon {
+    text-align: center;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.btn-floating {
+    color: white;
+}
+#landingpara {
+    margin: 50px 50px 50px 50px;
+    font-size: 1.6rem;
+}
+
+.flex-center {
+    text-align: center !important;
+    margin: 20px 20px 20px 20px;
+}
+.slanted{
+    transform: skewY(-4deg);
+    margin-top: 50px;
+}
+.slanted p {
+    transform: skewY(4deg);
+    text-align: center;
+}
+.slanted h1 {
+    transform: skewY(4deg);
+    text-align: center;
+}
+.contact {
+    text-align: center;
+}
+.contact p{
+    font-size: 1.6rem;
+}
+.carousel { 
+    margin-top: 100px;
+}
+.founder {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.gallery {
+    margin-top: 25px;
+}
+.cores {
+    margin-top: 100px;
+}
+.directors {
+    margin-top: 100px;
+}
+.execomm {
+    margin-top: 100px;
+}
+.all {
+    margin-top: 100px;
+}
+.firstyrs {
+    margin-top: 100px;
+}
+.secondyrs {
+    margin-top: 100px;
+}
+.thirdyrs {
+    margin-top: 100px;
+}
+.fourthyrs {
+    margin-top: 100px;
+}
+.execomms {
+    height: 500px;
+}
+.card-title{
+    font-size: 1.4rem !important;
+}
+.card-body{
+    font-size: 1.4rem !important;
+}
+.vidaais {
+    margin-top: 25px;
+}
+.vidaai_text {
+    height: 1500px;
+}
+.past {
+    margin-top: 100px;
+}
+.pasteve {
+    margin-bottom: 20px;
+    height: 1000px;
+}
+.btn {
+    border-radius: 100px;
+}
+#gall {
+    font-size: 4.0rem;
+    font-weight: bold;
+}
+#found {
+    font-size: 4.0rem;
+    font-weight: bold;
+}
+#vid {
+    font-size: 4.0rem;
+    font-weight: bold;
 }

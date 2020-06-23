@@ -1,0 +1,30 @@
+<%- include("../partials/header.ejs") %>
+<main>
+    <h1 style="text-align: center; color: white; margin-top: 100px;" id="vid">VENATUS VIDAAI SERIES 2019-20</h1>
+    <% if(vidaais.length > 0) { %>
+    <div class="container vidaais">
+        <div class="row">
+            <% for(let vidaai of vidaais) { %>
+            <div class="col-md-4">
+                <div class="card vidaai_text">
+                    <img src="<%= vidaai.img %>" class="card-img-top w-100" alt="PCI TEST">
+                    <div class="card-body">
+                        <h5 class="card-title">Name: <%= vidaai.name %></h5>
+                        <p class="card-text"><%= vidaai.text %></p>
+                        <% if (vidaai.fb) { %>
+                            <a href="<%= vidaai.fb %> " class="btn btn-primary">Facebook</a>                     
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+    <% }else{ %>
+    <div>
+        No events
+    </div>
+    <% } %>
+</main>
+
+<%- include("../partials/footer.ejs") %>

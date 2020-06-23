@@ -1,12 +1,12 @@
 <%- include("../partials/header.ejs") %>
 <main>
     <% if(firstyrs.length > 0) { %>
-    <div class="container">
+    <div class="container firstyrs">
         <div class="row">
         <% for(let firstyr of firstyrs) { %>
             <div class="col-md-4">
-                <div class="card">
-                    <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" class="card-img-top" alt="...">
+                <div class="card firstyr">
+                    <img src="<%= firstyr.img %> " class="card-img-top" alt="PIC TEST">
                     <div class="card-body">
                         <h5 class="card-title">Name: <%= firstyr.name %></h5>
                         <p class="card-text">
@@ -15,7 +15,9 @@
                             <span>Email: <%= firstyr.email %></span><br>
                             <span>Gamer-Tag: <%= firstyr.tag %></span><br>
                         </p>
-                        <a href="<%= firstyr.linkedIn %>" class="btn btn-primary">LinkedIn</a>
+                        <% if (firstyr.linkedIn) { %>
+                            <a href="<%= firstyr.linkedIn %>" class="btn btn-primary">LinkedIn</a>
+                        <% } %>
                     </div>
                 </div>
             </div>
@@ -24,7 +26,7 @@
         </div>
     <% }else{ %>
     <div>
-        No events
+        No events.
     </div>
     <% } %>
 </main>
