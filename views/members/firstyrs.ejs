@@ -6,9 +6,9 @@
         <% for(let firstyr of firstyrs) { %>
             <div class="col-md-4">
                 <div class="card firstyr">
-                    <img src="<%= firstyr.img %> " class="card-img-top" alt="PIC TEST">
+                    <img src="<%= firstyr.img %>" class="card-img-top" alt="PIC TEST">
                     <div class="card-body">
-                        <h5 class="card-title">Name: <%= firstyr.name %></h5>
+                        <h5 class="card-title card_title">Name: <%= firstyr.name %></h5>
                         <p class="card-text">
                             <span>Year: <%= firstyr.year %></span><br>
                             <span>Branch: <%= firstyr.branch %></span><br>
@@ -16,7 +16,7 @@
                             <span>Gamer-Tag: <%= firstyr.tag %></span><br>
                         </p>
                         <% if (firstyr.linkedIn) { %>
-                            <a href="<%= firstyr.linkedIn %>" class="btn btn-primary">LinkedIn</a>
+                            <a href="<%= firstyr.linkedIn %>" class="btn btn-primary"><i class="fab fa-linkedin fa-lg"></i></a>
                         <% } %>
                     </div>
                 </div>

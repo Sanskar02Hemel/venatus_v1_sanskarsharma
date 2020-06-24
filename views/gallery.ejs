@@ -1,9 +1,9 @@
 <%- include("./partials/header.ejs") %>
 <h1 style="text-align: center; color: white; margin-top: 100px;" id="gall">Gallery</h1>
-<div class="row gallery" style="display:flex; flex-wrap: wrap">
+<div class="row gallerys" style="display:flex; flex-wrap: wrap">
     <%if (gallerys.length > 0) { %>
     <% for(let gallery of gallerys) { %>
-    <div class="col-md-3 col-sm-6">
+    <div class="col-md-4 col-sm-6">
         <div class="card w-100 gallery">
             <img src="<%= gallery.img %>" class="img-thumbnail" alt="PCI TEST">
         </div>

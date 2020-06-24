@@ -1,7 +1,10 @@
 <%- include("../partials/header.ejs") %>
 <main>
-    <% if(events.length > 0) { %>
-    <div>
+        <div class="future">
+            <h1 style="color: white; font-weight: bold; text-align: center;">NO FUTURE EVENTS AS OF NOW!</h1>   
+        </div>
+    <!-- <% if(events.length > 0) { %>
+        
         <% for(let event of events) { %>
         <div>
             <%= event.name %>
@@ -13,12 +16,12 @@
             <%= event.info %>
         </div>
         <% } %>
-    </div>
+    
     <% }else{ %>
     <div>
         No events
     </div>
-    <% } %>
+    <% } %> -->
 </main>
 
 <%- include("../partials/footer.ejs") %>

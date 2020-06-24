@@ -34,6 +34,10 @@ const founderSchema = new Schema({
     fb: {
         type: String,
         required: true,
+    },
+    insta: {
+        type: String,
+        required: true,
     }
 });
 

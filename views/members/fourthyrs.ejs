@@ -9,7 +9,7 @@
                     <img src="<%= fourthyr.img %> " class="card-img-top"
                         alt="PIC TEST">
                     <div class="card-body">
-                        <h5 class="card-title">Name: <%= fourthyr.name%></h5>
+                        <h5 class="card-title card_title">Name: <%= fourthyr.name%></h5>
                         <p class="card-text">
                             <span>Year: <%= fourthyr.year %></span><br>
                             <span>Branch: <%= fourthyr.branch %></span><br>
@@ -18,7 +18,7 @@
                             <span>Placed in: <%= fourthyr.placement %></span><br>
                         </p>
                         <% if (fourthyr.linkedIn) { %>
-                            <a href="<%= fourthyr.linkedIn %>" class="btn btn-primary">LinkedIn</a>
+                            <a href="<%= fourthyr.linkedIn %>" class="btn btn-primary"><i class="fab fa-linkedin fa-lg"></i></a>
                         <% } %>
                     </div>
                 </div>
