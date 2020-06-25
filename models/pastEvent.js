@@ -15,6 +15,10 @@ const pastEventSchema = new Schema({
         type: String,
         required: true,
     },
+    readmore: {
+        type: String,
+        required: true,
+    }
 });
 
 module.exports = mongoose.model('Pastevent', pastEventSchema);

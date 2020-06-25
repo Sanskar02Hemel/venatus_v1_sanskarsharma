@@ -23,6 +23,10 @@ const vidaaiSchema = new Schema({
         type: String,
         required: true
     },
+    readmore: {
+        type: String,
+        required: true
+    }
 });
 
 module.exports = mongoose.model("Vidaais", vidaaiSchema);
