@@ -1,24 +1,31 @@
 <%- include("../partials/header.ejs") %>
 <main>
+    <div style="margin-top: 100px; text-align: center;">
+        <h1 style="font-size: 4rem; font-weight: bold; margin-bottom: 50px;">Second Years</h1>
+    </div>
     <% if(secondyrs.length > 0) { %>
         <div class="container secondyrs">
             <div class="row">
                 <% for(let secondyr of secondyrs) { %>
                 <div class="col-md-4">
                     <div class="card secondyr">
-                        <img src="<%= secondyr.img %> " class="card-img-top"
+                        <img src="<%= secondyr.img %>" class="card-img-top"
                             alt="PIC TEST">
                         <div class="card-body">
                             <h5 class="card-title card_title">Name: <%= secondyr.name %></h5>
                             <p class="card-text">
                                 <span>Year: <%= secondyr.year %></span><br>
                                 <span>Branch: <%= secondyr.branch %></span><br>
+                                <% if (secondyr.email) { %>
                                 <span>Email: <%= secondyr.email %></span><br>
+                                <% } %>
                                 <span>Gamer-Tag: <%= secondyr.tag %></span><br>
-                                <span>Achievement: <%= secondyr.achievement %></span><br>
+                                <% if (secondyr.achievement) { %>
+                                    <span>Achievement: <%= secondyr.achievement %></span><br>
+                                <% } %>
                             </p>
                             <% if (secondyr.linkedIn) { %>
-                                <a href="<%= secondyr.linkedIn %>" class="btn btn-primary"><i class="fab fa-linkedin fa-lg"></i></a>
+                                <a href="<%= secondyr.linkedIn %>"><i class="fab fa-linkedin fa-2x"></i></a>
                             <% } %>
                         </div>
                     </div>

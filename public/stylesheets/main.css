@@ -1,5 +1,6 @@
 #about_image {
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+    background-blend-mode: screen;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
     width: 100%;
 }
 .jumbotron {
@@ -18,22 +19,22 @@ body {
     font-size: 1.2rem;
     color: white;
     width: 100% !important;
-    
 }
 .navbar {
     padding: 15px;
     margin-bottom: 100px;
     font-size: 2rem;
-    background-color: #000428;
+    background-color: #05243c;
 }
 .card {
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
     color: black;
     width: 95%;
-    margin: 20px 20px 0 0;
+    margin: 20px 20px 20px 0;
     border-left: 700px;
     border-right: 700px;
     border-top: 700px;
+    border-bottom: 700px;
 }
 html {
     font-size: 62.5%;
@@ -45,22 +46,24 @@ html {
 #about h1 {
     text-align: center;
     font-weight: bold;
-    color: black;
     font-size: 6rem;
     letter-spacing: 3px;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: #041b2d;
 }
 #about p {
     font-size: 1.6rem;
     font-weight: 500;
     letter-spacing: 0.5px;
+    color: #041b2d;
 }
 .navbar-brand {
     font-size: 2rem;
 }
+/* BOX SHADOW MAIN BLUR BHI DIA KR */
 .jumbotron {
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .dropdown-menu {
     text-overflow: ellipsis !important;
@@ -101,8 +104,8 @@ html {
 /* .card {
     Raghav
     TRY TO USE REM, maine html main 1 rem = 10px define kr rkha hai, calculate kr ke use krlo, bta dunga kyun */
-    /* height: 45rem; */
-    /* /* 550 px / 10 == 55rem */
+/* height: 45rem; */
+/* /* 550 px / 10 == 55rem */
 /* } */
 .firstyr img {
     width: 100%;
@@ -137,8 +140,8 @@ html {
     height: 640px;
 }
 .gallery img {
-    height: 54.9rem;
-    width: 54.9rem;
+    height: 48.9rem;
+    width: 48.9rem;
 }
 .display-2 {
     font-weight: bold;
@@ -190,41 +193,60 @@ hr {
 .carousel {
     margin-top: 100px;
 }
+#found {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
 .founder {
-    margin-top: 20px;
-    overflow: hidden;
+    margin-top: 40px;
+}
+#foundercard {
+    height: 100%;
 }
 .gallerys {
     margin-top: 25px;
+    height: 100%;
+    width: 100%;
 }
 .gallery {
-    margin-bottom: 25px;
-    height: 53.9rem;
-    width: 50%;
+    margin: 25px 10px 25px 10px;
 }
 .cores {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .directors {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .execomm {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .all {
-    margin-top: 100px;
+    margin-top: 50px;
+}
+    /* .all_card {
+        height: 52rem;
+        width: 42rem;
+    } */
+.all_body {
+    font-size: 5rem !important;
+    height: 13rem !important;
+}
+.all_image {
+    height: 10rem !important;
+    width: 10rem !important;
 }
 .firstyrs {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .secondyrs {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .thirdyrs {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .fourthyrs {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .card-title {
@@ -236,34 +258,51 @@ hr {
     font-size: 1.6rem !important;
     text-align: center;
     height: 25rem;
+    background-color: #05243c;
+    color: white;
 }
 .vidaais {
     margin-top: 25px;
 }
 .vidaai_text {
-    height: 1400px;
+    height: 61rem;
 }
 .past {
     margin-top: 100px;
 }
 .pasteve {
     margin-bottom: 20px;
-    height: 1000px;
+    /* FOR CLIPPING TEXT */
+    min-height: 55rem;
+}
+/* FOR CLIPPING TEXT */
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    margin-bottom: 2rem;
 }
 .btn {
-    background: -webkit-linear-gradient(to right bottom, #000428, #004e92); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right bottom, #000428, #004e92);
+    background: -webkit-linear-gradient(to right bottom, #041b2d 53%, #2c6975 100%); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right bottom,
+        #041b2d,
+        #2c6975
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 100px;
     /* Raghav */
     text-transform: uppercase;
     padding: 1.5rem 4rem;
+    border: none;
     font-size: 1.6rem;
     transition: all 0.2s;
     /* Align the button in the center */
 }
-.btn {
+/* .btn {
     padding: 0.8rem;
-}
+} */
 /* Raghav */
 .btn:hover {
     transform: translateY(-3px);
@@ -284,10 +323,11 @@ hr {
     font-size: 4rem;
     font-weight: bold;
 }
-#found {
-    font-size: 4rem;
-    font-weight: bold;
-}
+
+/* #found:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+} */
 #vid {
     font-size: 4rem;
     font-weight: bold;
@@ -297,24 +337,25 @@ hr {
 }
 .card_body {
     height: 10.5rem;
-    background-color: lightblue;
+    background-color: #05243c;
 }
 .card_title {
     margin-top: 5px;
     margin-bottom: 5px;
-}::selection {
+}
+::selection {
     background-color: #004e92;
     color: #efefef;
 }
 .nav-link:hover,
 .nav-link:active {
-    color: pink;
+    color: #36808f;
 }
 .navbar-brand:hover,
 .navbar-brand:active {
-    color: pink;
+    color: #36808f;
 }
-.dev{
+.dev {
     color: white;
     margin-top: 15px;
     padding: 10px;
@@ -327,7 +368,56 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 370px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 30px;
     height: 45rem;
+}
+.devpara{
+    color: #041b2d;
+    font-size: 1.8rem;
+}
+/* RAGHAV */
+/* For dropdown width */
+.dropdown-menu {
+    width: 300px !important;
+}
+.play {
+    width: 300px;
+    height: 120px;
+}
+.foun_butt {
+    margin: 5px;
+    color: white;
+}
+.foun_butt:hover {
+    color: white;
+}
+.fa-linkedin {
+    color: white;
+}
+.fa-linkedin:hover {
+    color: white;
+}
+.fa-facebook {
+    color: white; 
+    margin-bottom: 10px;
+}
+.fa-facebook:hover {
+    color: white;
+}
+.events_heading {
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #041b2d;
+}
+.events_para {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #041b2d;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }

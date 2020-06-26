@@ -1,5 +1,6 @@
 <%- include("./partials/header.ejs") %>
 <h1 style="text-align: center; color: white; margin-top: 100px;" id="gall">Gallery</h1>
+<div>
 <div class="row gallerys" style="display:flex; flex-wrap: wrap">
     <%if (gallerys.length > 0) { %>
     <% for(let gallery of gallerys) { %>
@@ -11,4 +12,6 @@
     <% }; %>
     <% }; %>
 </div>
+</div>
+
 <%- include("./partials/footer.ejs") %>

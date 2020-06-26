@@ -1,5 +1,8 @@
 <%- include("../partials/header.ejs") %>
 <main>
+    <div style="margin-top: 100px; text-align: center;">
+        <h1 style="font-size: 4rem; font-weight: bold; margin-bottom: 50px;">Third Years</h1>
+    </div>
     <% if(thirdyrs.length > 0) { %>
     <div class="container thirdyrs">
         <div class="row">
@@ -13,11 +16,13 @@
                         <p class="card-text">
                             <span>Year: <%= thirdyr.year %></span><br>
                             <span>Branch: <%= thirdyr.branch %></span><br>
-                            <span>Email: <%= thirdyr.email %></span><br>
+                            <% if (thirdyr.email) { %>
+                                <span>Email: <%= thirdyr.email %></span><br>
+                            <% } %>
                             <span>Gamer-Tag: <%= thirdyr.tag %></span><br>
                         </p>
                         <% if (thirdyr.linkedIn) { %>
-                            <a href="<%= thirdyr.linkedIn %>" class="btn btn-primary"><i class="fab fa-linkedin fa-lg"></i></a>
+                            <a href="<%= thirdyr.linkedIn %>"><i class="fab fa-linkedin fa-2x"></i></a>
                         <% } %>
                     </div>
                 </div>

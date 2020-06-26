@@ -6,13 +6,15 @@
       <% for(let event of events) { %>
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
         <div class="card border-0 shadow pasteve">
-          <img src="<%= event.img %>" class="card-img-top" alt="PCI TEST">
+          <img src="<%= event.img %>" class="card-img-top" alt="PCI TEST" />
           <div class="card-body">
             <h5 class="card-title">Title: <%= event.name %></h5>
-            <p class="card-text">
-              <%= event.info %> 
-            </p>
-            <a href="<%= event.readmore %>" class="btn btn-primary">Read More</a>
+            <span class="card-text" id="card-text">
+              <%= event.info %>
+            </span>
+            <a href="<%= event.readmore %>" class="btn btn-primary"
+              style="padding: 10px 20px 10px 20px;">Read More</a
+            >
           </div>
         </div>
       </div>
